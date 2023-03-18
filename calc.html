@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ROI Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="calculator">
+    <h1>Amortizing loan ROI Calculator</h1>
+    <p>Ever wondered the return of investment rate given an <a href="https://en.wikipedia.org/wiki/Amortizing_loan" target="_blank"
+                                                               rel="noopener noreferrer">amortizing loan</a> considering the present value of the payments?</p>
+    <div class="input-container">
+      <label for="periods">N (number of periods)</label>
+      <input type="number" id="periods" step="1" min="1" value="12">
+    </div>
+    <div class="input-container">
+      <label for="interestRate">R (percent interest rate per period)</label>
+      <input type="number" id="interestRate" step="0.01" min="0" value="7.00">
+    </div>
+    <div class="input-container">
+      <label for="inflationRate">F (percent inflation rate per period)</label>
+      <input type="number" id="inflationRate" step="0.01" min="0" value="10.00">
+    </div>
+    <button id="calculate">Calculate ROI</button>
+    <div class="result">
+      <span>ROI: </span>
+      <span id="roiResult"></span>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
